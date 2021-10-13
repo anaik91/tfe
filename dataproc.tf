@@ -154,6 +154,11 @@ resource "google_dataproc_cluster" "mycluster_ukms" {
     encryption_config {
       kms_key_name = google_kms_crypto_key.crypto_key.id
     }
+    
+    encryption_config {
+      kms_key_name = google_kms_crypto_key.crypto_key.id
+
+    }
 
   }
 }
